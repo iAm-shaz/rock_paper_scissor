@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+    function computerplay (){
+        let arr = ["rock", "paper", "scissor"];
+        let random = arr[Math.floor(Math.random() * arr.length)]
+                return random;
+    }
+    function gamestart(playerselection, computerselection){
+        if (playerselection=="rock" && computerselection=="rock"){
+        alert ("it's a tie");
+        }
+        else if (playerselection=="rock" && computerselection=="paper"){
+        alert ("computer win")}
+        else if (playerselection=="rock" && computerselection=="scissor"){
+        alert ("player win")}
+        else if (playerselection=="paper" && computerselection=="scissor"){
+        alert ("player win")}
+        else if (playerselection=="paper" && computerselection=="rock"){
+        alert ("Computer win")}
+        else if (playerselection=="paper" && computerselection=="paper"){
+        alert ("Tie")}
+        else if (playerselection=="scissor" && computerselection=="scissor"){
+        alert ("Tie")}
+        else if (playerselection=="scissor" && computerselection=="paper"){
+        alert ("Player win")}
+        else if (playerselection=="scissor" && computerselection=="rock"){
+        alert ("computer win")}
+    }
+    let playerSelection = prompt("Enter your choice:").toLowerCase();
+    
+    console.log(gamestart(playerSelection,computerplay()));
+</script>
+
+</head>
+</html>
